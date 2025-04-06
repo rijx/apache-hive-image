@@ -65,3 +65,7 @@ jobs:
           labels: ${{ steps.meta.outputs.labels }}
           cache-from: type=gha
           cache-to: type=gha,mode=max
+          build-args: |
+            HADOOP_VERSION=3.1.0
+            HIVE_VERSION=4.0.1
+            TEZ_VERSION=0.9.1
